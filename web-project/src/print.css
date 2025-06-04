@@ -1,25 +1,80 @@
-/* Hide navigation and footer when printing */
+/* Hide navigation, footer, and non-essential asides when printing */
 nav, footer, #wifi-installation-info, #aftermarket-solutions {
     display: none !important;
 }
 
 /* Make content full width for print */
-.content, main, #page {
+#page, .content, main {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    box-sizing: border-box !important;
 }
 
-/* Adjust font size for print */
+/* Adjust font size and colors for print */
 body {
     font-size: 12pt;
-    color: #000;
+    color: #000 !important;
     background: #fff !important;
+    line-height: 1.5;
 }
 
-/* Remove background colors from plans */
-.plan {
+/* Remove background colors and box shadows from plans */
+.plan, .plans-container {
     background: none !important;
     border: 1px solid #ccc !important;
     box-shadow: none !important;
+    color: #000 !important;
+}
+
+/* Ensure headings are not cut off at page breaks */
+h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000 !important;
+}
+
+/* Add page breaks between major sections */
+section {
+    page-break-before: always;
+    break-before: page;
+}
+
+/* Show link URLs after the link text */
+a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #555;
+}
+
+/* Remove underline from links for print */
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+/* Remove any print-unfriendly effects */
+* {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background: transparent !important;
+}
+
+/* Remove focus outlines for print */
+a:focus, button:focus, input:focus {
+    outline: none !important;
+}
+
+/* Hide elements with class 'no-print' */
+.no-print {
+    display: none !important;
+}
+
+/* Optional: Add a border to main content for clarity */
+main {
+    border: 1px solid #eee !important;
+    padding: 1em !important;
+}
+
+body, #page, .content, main, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, .plan, .plans-container, section, aside, div, span {
+    color: #000 !important;
 }
