@@ -1,8 +1,8 @@
 #page {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #000; /* black background */
+  color: #ff0000;         /* red text */
   min-height: 100vh;
   width: 100%;
   margin: 0;
@@ -13,19 +13,20 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #000; /* black background */
+  color: #ff0000;         /* red text */
 }
 
 header {
-  background: #35424a;
-  color: #ffffff;
+  background: #000;       /* black background */
+  color: #ff0000;         /* red text */
   padding: 10px 0;
   text-align: center;
 }
 
 h1 {
   margin: 0;
+  color: #ff0000;         /* red headings */
 }
 
 nav {
@@ -33,27 +34,79 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  color: #fff;            /* white text for contrast on black */
+  background: #c00;       /* dark red background for nav links */
   text-decoration: none;
   padding: 10px 15px;
 }
 
 nav a:hover {
-  background: #e8491d;
+  background: #ff0000;    /* bright red on hover */
+  color: #fff;            /* white text for contrast */
 }
 
 .container {
   width: 80%;
   margin: auto;
   overflow: hidden;
+  background: #000;       /* black background */
+  color: #ff0000;         /* red text */
 }
 
 footer {
+  background: #000;      /* black background */
+  color: #fff;           /* white text for contrast */
   text-align: center;
   padding: 20px 0;
-  background: #35424a;
-  color: #ffffff;
+  width: 100%;
   position: relative;
   bottom: 0;
-  width: 100%;
+}
+
+/* Highlight sections with yellow background and blue text */
+.easy-target {
+  background: #ff0000;    /* red background */
+  color: #fff;            /* white text for contrast */
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 16px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .container, .content {
+    width: 98%;
+    padding: 0 1%;
+    background: #000;
+    color: #ff0000;
+  }
+  .plans-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container, .content {
+    width: 90%;
+    padding: 0 5%;
+    background: #000;
+    color: #ff0000;
+  }
+  .plans-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container, .content {
+    width: 80%;
+    margin: auto;
+    background: #000;
+    color: #ff0000;
+  }
+  .plans-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
