@@ -1,0 +1,25 @@
+/* Hide navigation and footer when printing */
+nav, footer, #wifi-installation-info, #aftermarket-solutions {
+    display: none !important;
+}
+
+/* Make content full width for print */
+.content, main, #page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Adjust font size for print */
+body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff !important;
+}
+
+/* Remove background colors from plans */
+.plan {
+    background: none !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+}
