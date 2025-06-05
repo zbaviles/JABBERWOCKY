@@ -1,169 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROJECT TWO</title>
-</head>
-<body>
-  <main>
-    <h1>WCAG Success Criteria Outline</h1>
-    <ol>
-      <li>Perceivable
-        <ol>
-          <li>Text Alternatives
-            <ol>
-              <li>Non-text Content</li>
-            </ol>
-          </li>
-          <li>Time-based Media
-            <ol>
-              <li>Audio-only and Video-only (Prerecorded)</li>
-              <li>Captions (Prerecorded)</li>
-              <li>Audio Description or Media Alternative (Prerecorded)</li>
-              <li>Captions (Live)</li>
-              <li>Audio Description (Prerecorded)</li>
-              <li>Sign Language (Prerecorded)</li>
-              <li>Extended Audio Description (Prerecorded)</li>
-              <li>Media Alternative (Prerecorded)</li>
-              <li>Audio-only (Live)</li>
-            </ol>
-          </li>
-          <li>Adaptable
-            <ol>
-              <li>Info and Relationships</li>
-              <li>Meaningful Sequence</li>
-              <li>Sensory Characteristics</li>
-              <li>Orientation</li>
-              <li>Identify Input Purpose</li>
-              <li>Identify Purpose</li>
-            </ol>
-          </li>
-          <li>Distinguishable
-            <ol>
-              <li>Use of Color</li>
-              <li>Audio Control</li>
-              <li>Contrast (Minimum)</li>
-              <li>Resize Text</li>
-              <li>Images of Text</li>
-              <li>Contrast (Enhanced)</li>
-              <li>Low or No Background Audio</li>
-              <li>Visual Presentation</li>
-              <li>Images of Text (No Exception)</li>
-              <li>Reflow</li>
-              <li>Non-text Contrast</li>
-              <li>Text Spacing</li>
-              <li>Content on Hover or Focus</li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>Operable
-        <ol>
-          <li>Keyboard Accessible
-            <ol>
-              <li>Keyboard</li>
-              <li>No Keyboard Trap</li>
-              <li>Keyboard (No Exception)</li>
-              <li>Character Key Shortcuts</li>
-            </ol>
-          </li>
-          <li>Enough Time
-            <ol>
-              <li>Timing Adjustable</li>
-              <li>Pause, Stop, Hide</li>
-              <li>No Timing</li>
-              <li>Interruptions</li>
-              <li>Re-authenticating</li>
-              <li>Timeouts</li>
-            </ol>
-          </li>
-          <li>Seizures and Physical Reactions
-            <ol>
-              <li>Three Flashes or Below Threshold</li>
-              <li>Three Flashes</li>
-              <li>Animation from Interactions</li>
-            </ol>
-          </li>
-          <li>Navigable
-            <ol>
-              <li>Bypass Blocks</li>
-              <li>Page Titled</li>
-              <li>Focus Order</li>
-              <li>Link Purpose (In Context)</li>
-              <li>Multiple Ways</li>
-              <li>Headings and Labels</li>
-              <li>Focus Visible</li>
-              <li>Location</li>
-              <li>Link Purpose (Link Only)</li>
-              <li>Section Headings</li>
-              <li>Focus Not Obscured (Minimum)</li>
-              <li>Focus Not Obscured (Enhanced)</li>
-              <li>Focus Appearance</li>
-            </ol>
-          </li>
-          <li>Input Modalities
-            <ol>
-              <li>Pointer Gestures</li>
-              <li>Pointer Cancellation</li>
-              <li>Label in Name</li>
-              <li>Motion Actuation</li>
-              <li>Target Size (Enhanced)</li>
-              <li>Concurrent Input Mechanisms</li>
-              <li>Dragging Movements</li>
-              <li>Target Size (Minimum)</li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>Understandable
-        <ol>
-          <li>Readable
-            <ol>
-              <li>Language of Page</li>
-              <li>Language of Parts</li>
-              <li>Unusual Words</li>
-              <li>Abbreviations</li>
-              <li>Reading Level</li>
-              <li>Pronunciation</li>
-            </ol>
-          </li>
-          <li>Predictable
-            <ol>
-              <li>On Focus</li>
-              <li>On Input</li>
-              <li>Consistent Navigation</li>
-              <li>Consistent Identification</li>
-              <li>Change on Request</li>
-              <li>Consistent Help</li>
-            </ol>
-          </li>
-          <li>Input Assistance
-            <ol>
-              <li>Error Identification</li>
-              <li>Labels or Instructions</li>
-              <li>Error Suggestion</li>
-              <li>Error Prevention (Legal, Financial, Data)</li>
-              <li>Help</li>
-              <li>Error Prevention (All)</li>
-              <li>Redundant Entry</li>
-              <li>Accessible Authentication (Minimum)</li>
-              <li>Accessible Authentication (Enhanced)</li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-      <li>Robust
-        <ol>
-          <li>Compatible
-            <ol>
-              <li>Name, Role, Value</li>
-              <li>Status Messages</li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-    </ol>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJECT TWO</title>
+    <style>
+      ol > li a:nth-child(1) {
+        color: red;
+        font-weight: bold;
+      }
+      main > ol > li:nth-child(1) {
+        background: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>WCAG Success Criteria Outline</h1>
+      <ol>
+        <li>
+          <a href="#perceivable">Perceivable</a>
+          <ol>
+            <li>
+              <a href="#text-alternatives">Text Alternatives</a>
+              <ol>
+                <li><a href="#non-text-content">Non-text Content</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#time-based-media">Time-based Media</a>
+              <ol>
+                <li>
+                  <a href="#audio-only-and-video-only"
+                    >Audio-only and Video-only (Prerecorded)</a
+                  >
+                </li>
+                <li>
+                  <a href="#captions-prerecorded">Captions (Prerecorded)</a>
+                </li>
+                <li>
+                  <a href="#audio-description-or-media-alternative"
+                    >Audio Description or Media Alternative (Prerecorded)</a
+                  >
+                </li>
+                <li><a href="#captions-live">Captions (Live)</a></li>
+                <li>
+                  <a href="#audio-description-prerecorded"
+                    >Audio Description (Prerecorded)</a
+                  >
+                </li>
+                <li>
+                  <a href="#sign-language-prerecorded"
+                    >Sign Language (Prerecorded)</a
+                  >
+                </li>
+                <li>
+                  <a href="#extended-audio-description-prerecorded"
+                    >Extended Audio Description (Prerecorded)</a
+                  >
+                </li>
+                <li>
+                  <a href="#media-alternative-prerecorded"
+                    >Media Alternative (Prerecorded)</a
+                  >
+                </li>
+                <li><a href="#audio-only-live">Audio-only (Live)</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#adaptable">Adaptable</a>
+              <ol>
+                <li><a href="info-and-relationship">Info and Relationships</a></li>
+                <li><a href="meaningful-sequence">Meaningful Sequence</a></li>
+                <li><a href="sensory-characteristics">Sensory Characteristics</a></li>
+                <li><a href="orientation">Orientation</a></li>
+                <li><a href="identify-input-purpose">Identify Input Purpose</a></li>
+                <li><a href="identify-purpose">Identify Purpose</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#distinguishable"></a>Distinguishable</a>
+              <ol>
+                <li><a href="#use-of-color">Use of Color</a></li>
+                <li> <a href="#audio-control"></a> Audio Control</li>
+                <li> <a href="#contrast-minimum"></a> Contrast (Minimum)</li>
+                <li>Resize Text</li>
+                <li>Images of Text</li>
+                <li>Contrast (Enhanced)</li>
+                <li>Low or No Background Audio</li>
+                <li>Visual Presentation</li>
+                <li>Images of Text (No Exception)</li>
+                <li>Reflow</li>
+                <li>Non-text Contrast</li>
+                <li>Text Spacing</li>
+                <li>Content on Hover or Focus</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Operable
+          <ol>
+            <li>
+              Keyboard Accessible
+              <ol>
+                <li>Keyboard</li>
+                <li>No Keyboard Trap</li>
+                <li>Keyboard (No Exception)</li>
+                <li>Character Key Shortcuts</li>
+              </ol>
+            </li>
+            <li>
+              Enough Time
+              <ol>
+                <li>Timing Adjustable</li>
+                <li>Pause, Stop, Hide</li>
+                <li>No Timing</li>
+                <li>Interruptions</li>
+                <li>Re-authenticating</li>
+                <li>Timeouts</li>
+              </ol>
+            </li>
+            <li>
+              Seizures and Physical Reactions
+              <ol>
+                <li>Three Flashes or Below Threshold</li>
+                <li>Three Flashes</li>
+                <li>Animation from Interactions</li>
+              </ol>
+            </li>
+            <li>
+              Navigable
+              <ol>
+                <li>Bypass Blocks</li>
+                <li>Page Titled</li>
+                <li>Focus Order</li>
+                <li>Link Purpose (In Context)</li>
+                <li>Moltiple Ways</li>
+                <li>Headings and Labels</li>
+                <li>Focus Visible</li>
+                <li>Location</li>
+                <li>Link Purpose (Link Only)</li>
+                <li>Section Headings</li>
+                <li>Focus Not Obscured (Minimum)</li>
+                <li>Focus Not Obscured (Enhanced)</li>
+                <li>Focus Appearance</li>
+              </ol>
+            </li>
+            <li>
+              Input Modalities
+              <ol>
+                <li>Pointer Gestures</li>
+                <li>Pointer Cancellation</li>
+                <li>Label in Name</li>
+                <li>Motion Actuation</li>
+                <li>Target Size (Enhanced)</li>
+                <li>Concurrent Input Mechanisms</li>
+                <li>Dragging Movements</li>
+                <li>Target Size (Minimum)</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Understandable
+          <ol>
+            <li>
+              Readable
+              <ol>
+                <li>Language of Page</li>
+                <li>Language of Parts</li>
+                <li>Unusual Words</li>
+                <li>Abbreviations</li>
+                <li>Reading Level</li>
+                <li>Pronunciation</li>
+              </ol>
+            </li>
+            <li>
+              Predictable
+              <ol>
+                <li>On Focus</li>
+                <li>On Input</li>
+                <li>Consistent Navigation</li>
+                <li>Consistent Identification</li>
+                <li>Change on Request</li>
+                <li>Consistent Help</li>
+              </ol>
+            </li>
+            <li>
+              Input Assistance
+              <ol>
+                <li>Error Identification</li>
+                <li>Labels or Instructions</li>
+                <li>Error Suggestion</li>
+                <li>Error Prevention (Legal, Financial, Data)</li>
+                <li>Help</li>
+                <li>Error Prevention (All)</li>
+                <li>Redundant Entry</li>
+                <li>Accessible Authentication (Minimum)</li>
+                <li>Accessible Authentication (Enhanced)</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Robust
+          <ol>
+            <li>
+              Compatible
+              <ol>
+                <li>Name, Role, Value</li>
+                <li>Status Messages</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+    </main>
+  </body>
 </html>
