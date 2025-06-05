@@ -274,5 +274,35 @@
         <li><a href="#third-item"> Third item </a></li>
       </ul>
     </main>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Create clock container
+  const clock = document.createElement('div');
+  clock.setAttribute('aria-live', 'polite');
+  clock.style.position = 'fixed';
+  clock.style.top = '16px';
+  clock.style.right = '32px';
+  clock.style.background = 'rgba(255,255,255,0.85)';
+  clock.style.color = '#b22234';
+  clock.style.fontWeight = 'bold';
+  clock.style.fontSize = '1.2rem';
+  clock.style.padding = '0.4em 1em';
+  clock.style.borderRadius = '8px';
+  clock.style.boxShadow = '0 2px 8px rgba(60,60,60,0.10)';
+  clock.style.zIndex = '9999';
+  clock.style.letterSpacing = '1px';
+  clock.innerText = "🕒 --:--:--";
+
+  document.body.appendChild(clock);
+
+  function updateClock() {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString();
+    clock.innerText = "🕒 " + timeStr;
+  }
+  updateClock();
+  setInterval(updateClock, 1000);
+});
+</script>
   </body>
 </html>
