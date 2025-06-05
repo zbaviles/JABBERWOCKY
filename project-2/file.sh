@@ -17,12 +17,8 @@ curl -X POST --data-binary @/tmp/index.html.enc http://localhost:5550/
 # Clean up
 rm /tmp/index.html.enc
 
-# ...existing code...
-
 # Ping google.com and save the output to google.com.ping
 ping -c 4 google.com > google.com.ping
-
-# ...existing code...
 
 wc -l index.html > lines.txt
 
@@ -40,3 +36,9 @@ kill $server_pid
 # Show a summary of the downloaded file
 echo "Downloaded directory listing summary:"
 head -20 directory.html
+
+# Display the contents of example.cpp
+echo "Displaying example.cpp:"
+cat example.cpp
+./a.out
+whoami
