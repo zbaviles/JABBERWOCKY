@@ -23,3 +23,20 @@ rm /tmp/index.html.enc
 ping -c 4 google.com > google.com.ping
 
 # ...existing code...
+
+wc -l index.html > lines.txt
+
+# Start HTTPS server in background using your server.pem
+python3 -m http.server 8443 --bind 127.0.0.1 --directory . --certfile server.pem &
+server_pid=$!
+sleep 2  # Give the server time to start
+
+# Use wget to securely fetch the directory listing (information summary)
+wget --no-check-certificate https://127.0.0.1:8443 -O directory.html
+
+# Kill the server after fetching
+kill $server_pid
+
+# Show a summary of the downloaded file
+echo "Downloaded directory listing summary:"
+head -20 directory.html
