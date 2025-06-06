@@ -1,308 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PROJECT TWO</title>
-    <style>
-      body {
-        background: linear-gradient(135deg, #e6e6e6 0%, #b0b0b0 100%);
-        color: #222b38;
-        font-family: 'Segoe UI', 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      main {
-        max-width: 900px;
-        margin: 2rem auto;
-        background: rgba(255,255,255,0.95);
-        border-radius: 12px;
-        box-shadow: 0 4px 24px rgba(60,60,60,0.18);
-        padding: 2rem 2.5rem;
-        border: 2px solid #b0b0b0;
-      }
-      h1 {
-        color: #b22234; /* American flag red */
-        text-shadow: 1px 1px 0 #fff, 2px 2px 0 #3c3b6e;
-        letter-spacing: 2px;
-        font-weight: 900;
-        font-size: 2.2rem;
-        margin-bottom: 1.5rem;
-      }
-      a {
-        color: #3c3b6e; /* American flag blue */
-        font-weight: bold;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      a:hover, a:focus {
-        color: #b22234;
-        text-decoration: underline;
-      }
-      ol, ul {
-        padding-left: 2rem;
-      }
-      ol > li, ul > li {
-        margin-bottom: 0.5rem;
-        font-size: 1.08rem;
-      }
-      ol > li > a, ul > li > a {
-        border-bottom: 2px solid #b0b0b0;
-        padding-bottom: 2px;
-        border-radius: 2px;
-      }
-      main > ul > li {
-        background: #f5f5f5;
-        border-left: 4px solid #b22234;
-        margin-bottom: 0.5rem;
-        padding: 0.4rem 1rem;
-      }
-      /* Optional: metallic effect for headings */
-      h1, h2, h3 {
-        background: linear-gradient(90deg, #b0b0b0 0%, #e6e6e6 50%, #b0b0b0 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>WCAG Success Criteria Outline</h1>
-      <ol>
-        <li>
-          <a href="#perceivable">Perceivable</a>
-          <ol>
-            <li>
-              <a href="#text-alternatives">Text Alternatives</a>
-              <ol>
-                <li><a href="#non-text-content">Non-text Content</a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#time-based-media">Time-based Media</a>
-              <ol>
-                <li>
-                  <a href="#audio-only-and-video-only"
-                    >Audio-only and Video-only (Prerecorded)</a
-                  >
-                </li>
-                <li>
-                  <a href="#captions-prerecorded">Captions (Prerecorded)</a>
-                </li>
-                <li>
-                  <a href="#audio-description-or-media-alternative"
-                    >Audio Description or Media Alternative (Prerecorded)</a
-                  >
-                </li>
-                <li><a href="#captions-live">Captions (Live)</a></li>
-                <li>
-                  <a href="#audio-description-prerecorded"
-                    >Audio Description (Prerecorded)</a
-                  >
-                </li>
-                <li>
-                  <a href="#sign-language-prerecorded"
-                    >Sign Language (Prerecorded)</a
-                  >
-                </li>
-                <li>
-                  <a href="#extended-audio-description-prerecorded"
-                    >Extended Audio Description (Prerecorded)</a
-                  >
-                </li>
-                <li>
-                  <a href="#media-alternative-prerecorded"
-                    >Media Alternative (Prerecorded)</a
-                  >
-                </li>
-                <li><a href="#audio-only-live">Audio-only (Live)</a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#adaptable">Adaptable</a>
-              <ol>
-                <li><a href="info-and-relationship">Info and Relationships</a></li>
-                <li><a href="meaningful-sequence">Meaningful Sequence</a></li>
-                <li><a href="sensory-characteristics">Sensory Characteristics</a></li>
-                <li><a href="orientation">Orientation</a></li>
-                <li><a href="identify-input-purpose">Identify Input Purpose</a></li>
-                <li><a href="identify-purpose">Identify Purpose</a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#distinguishable">Distinguishable</a></a>
-              <ol>
-                <li><a href="#use-of-color">Use of Color</a></li>
-                <li> <a href="#audio-control"> Audio Control </a></li>
-                <li> <a href="#contrast-minimum">Contrast (Minimum)</a></li>
-                <li> <a href="#resize-text">Resize Text</a></li>
-                <li> <a href="#images-of-text">Images of Text</a></li>
-                <li> <a href="#contrast-enchanced">Contrast (Enhanced)</a></li>
-                <li> <a href="#a-low-or-no-background-audio">a Low or No Background Audio</a></li>
-                <li> <a href="#visual-presentation">a Visual Presentation</a></li>
-                <li> <a href="#images-of-text-no-exception">a Images of Text (No Exception)</a></li>
-                <li> <a href="#reflow">a Reflow</a></li>
-                <li> <a href="#non-text-contrast">a Non-text Contrast</a></li>
-                <li> <a href="#text-spacing">a Text Spacing</a></li>
-                <li> <a href="#content-on-hover-or-focus"> a Content on Hover or Focus </a></li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <a href="#operable"> Operable </a>
-          <ol>
-            <li>
-              <a href="#keyboard-accessible"> Keyboard Accessible </a>
-              <ol>
-                <li><a href="#keyboard"> Keyboard </a></li>
-                <li><a href="#no-keyboard-trap"> No Keyboard Trap </a></li>
-                <li><a href="#keyboard-no-exception"> Keyboard (No Exception) </a></li>
-                <li><a href="#character-key-shortcuts"> Character Key Shortcuts </a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#enough-time"> Enough Time </a>
-              <ol>
-                <li><a href="#timing-adjustable"> Timing Adjustable </a></li>
-                <li><a href="#pause-stop-hide"> Pause, Stop, Hide </a></li>
-                <li><a href="#no-timing"> No Timing </a></li>
-                <li><a href="#interruptions"> Interruptions </a></li>
-                <li><a href="#re-authenticating"> Re-authenticating </a></li>
-                <li><a href="#timeouts"> Timeouts </a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#seizures-and-physical-reactions"> Seizures and Physical Reactions </a>
-              <ol>
-                <li><a href="#three-flashes-or-below-threshold"> Three Flashes or Below Threshold </a></li>
-                <li><a href="#three-flashes"> Three Flashes </a></li>
-                <li><a href="#animation-from-interactions"> Animation from Interactions </a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#navigable"> Navigable </a>
-              <ol>
-                <li><a href="#bypass-blocks"> Bypass Blocks </a></li>
-                <li><a href="#page-titled"> Page Titled </a></li>
-                <li><a href="#focus-order"> Focus Order </a></li>
-                <li><a href="#link-purpose-in-context"> Link Purpose (In Context) </a></li>
-                <li><a href="#multiple-ways"> Multiple Ways </a></li>
-                <li><a href="#headings-and-labels"> Headings and Labels </a></li>
-                <li><a href="#focus-visible"> Focus Visible </a></li>
-                <li><a href="#location"> Location </a></li>
-                <li><a href="#link-purpose-link-only"> Link Purpose (Link Only) </a></li>
-                <li><a href="#section-headings"> Section Headings </a></li>
-                <li><a href="#focus-not-obscured-minimum"> Focus Not Obscured (Minimum) </a></li>
-                <li><a href="#focus-not-obscured-enhanced"> Focus Not Obscured (Enhanced) </a></li>
-                <li><a href="#focus-appearance"> Focus Appearance </a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#input-modalities"> Input Modalities </a>
-              <ol>
-                <li><a href="#pointer-gestures"> Pointer Gestures </a></li>
-                <li><a href="#pointer-cancellation"> Pointer Cancellation </a></li>
-                <li><a href="#label-in-name"> Label in Name </a></li>
-                <li><a href="#motion-actuation"> Motion Actuation </a></li>
-                <li><a href="#target-size-enhanced"> Target Size (Enhanced) </a></li>
-                <li><a href="#concurrent-input-mechanisms"> Concurrent Input Mechanisms </a></li>
-                <li><a href="#dragging-movements"> Dragging Movements </a></li>
-                <li><a href="#target-size-minimum"> Target Size (Minimum) </a></li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-        <li>
-            <a href="#understandable"> Understandable </a>
-          <ol>
-            <li>
-              <a href="#readable"> Readable </a>
-              <ol>
-                <li><a href="#language-of-page"> Language of Page </a></li>
-                <li><a href="#language-of-parts"> Language of Parts </a></li>
-                <li><a href="#unusual-words"> Unusual Words </a></li>
-                <li><a href="#abbreviations"> Abbreviations </a></li>
-                <li><a href="#reading-level"> Reading Level </a></li>
-                <li><a href="#pronunciation"> Pronunciation </a>  </li>
-              </ol>
-            </li>
-            <li>
-              <a href="#predictable"> Predictable </a>
-              <ol>
-                <li><a href="#on-focus"> On Focus </a></li>
-                <li><a href="#on-input"> On Input </a></li>
-                <li><a href="#consistent-navigation"> Consistent Navigation </a></li>
-                <li><a href="#consistent-identification"> Consistent Identification </a></li>
-                <li><a href="#change-on-request"> Change on Request </a></li>
-                <li><a href="#consistent-help"> Consistent Help </a> </li>
-              </ol>
-            </li>
-            <li>
-              <a href="#input-assistance"> Input Assistance </a> 
-              <ol>
-                <li><a href="#error-identification"> Error Identification </a></li>
-                <li><a href="#labels-or-instructions"> Labels or Instructions </a></li>
-                <li><a href="#error-suggestion"> Error Suggestion </a></li>
-                <li><a href="#error-prevention-legal-financial-data"> Error Prevention (Legal, Financial, Data) </a></li>
-                <li><a href="#help"> Help </a></li>
-                <li><a href="#error-prevention-all"> Error Prevention (All) </a></li>
-                <li><a href="#redundant-entry"> Redundant Entry </a></li>
-                <li><a href="#accessible-authentication-minimum"> Accessible Authentication (Minimum) </a></li>
-                <li><a href="#accessible-authentication-enhanced"> Accessible Authentication (Enhanced) </a></li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-        <li>
-           <a href="#robust"> Robust </a>
-          <ol>
-            <li>
-              <a href="#compatible"> Compatible </a>
-              <ol>
-                <li><a href="#name-role-value"> Name, Role, Value </a></li>
-                <li><a href="#status-messages"> Status Messages </a></li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-      </ol>
-      <ul>
-        <li><a href="#first-item"> First item </a></li>
-        <li><a href="#second-item"> Second item </a></li>
-        <li><a href="#third-item"> Third item </a></li>
-      </ul>
-    </main>
-    <script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Create clock container
-  const clock = document.createElement('div');
-  clock.setAttribute('aria-live', 'polite');
-  clock.style.position = 'fixed';
-  clock.style.top = '16px';
-  clock.style.right = '32px';
-  clock.style.background = 'rgba(255,255,255,0.85)';
-  clock.style.color = '#b22234';
-  clock.style.fontWeight = 'bold';
-  clock.style.fontSize = '1.2rem';
-  clock.style.padding = '0.4em 1em';
-  clock.style.borderRadius = '8px';
-  clock.style.boxShadow = '0 2px 8px rgba(60,60,60,0.10)';
-  clock.style.zIndex = '9999';
-  clock.style.letterSpacing = '1px';
-  clock.innerText = "🕒 --:--:--";
+<head>
+  <meta charset="UTF-8">
+  <title>Bill of Rights - Project Directory Cover</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #e6e6e6 0%, #b0b0b0 100%);
+      color: #222b38;
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255,255,255,0.97);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(60,60,60,0.18);
+      padding: 2rem 2.5rem;
+      border: 2px solid #b0b0b0;
+    }
+    h1 {
+      color: #b22234;
+      text-shadow: 1px 1px 0 #fff, 2px 2px 0 #3c3b6e;
+      letter-spacing: 2px;
+      font-weight: 900;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(90deg, #b0b0b0 0%, #e6e6e6 50%, #b0b0b0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .dir-structure {
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 1em 2em;
+      margin: 2em 0;
+      box-shadow: 0 2px 8px #bbb;
+      color: #3c3b6e;
+      font-size: 1.08rem;
+    }
+    .bill-list {
+      margin: 2em 0 1em 0;
+      padding-left: 1.5em;
+    }
+    .bill-list li {
+      margin-bottom: 0.7em;
+      font-size: 1.08rem;
+    }
+    .source-link {
+      display: inline-block;
+      margin-top: 1.5em;
+      color: #3c3b6e;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 2px solid #b0b0b0;
+      padding-bottom: 2px;
+      border-radius: 2px;
+      transition: color 0.2s;
+    }
+    .source-link:hover {
+      color: #b22234;
+      text-decoration: underline;
+    }
+    ol { max-width: 500px; margin: 2em auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #bbb; padding: 2em; }
+    li { margin: 1.5em 0; }
+    a { color: #3c3b6e; text-decoration: none; font-weight: bold; }
+    a.visited { color: #b22234; }
+    .count { font-size: 0.9em; color: #888; margin-left: 0.5em; }
+    #source-list {
+      list-style: none;
+      padding-left: 0;
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Bill of Rights<br><span style="font-size:1.1rem;font-weight:400;">(Project Directory Cover)</span></h1>
+    <div class="dir-structure">
+      /JABBERWOCKY<br>
+      └── project-2/<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── index.html<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── coraline_shell.py<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── file.sh<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── anchor_db_demo.html<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;├── bill_of_rights_cover.html<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;└── ...<br>
+    </div>
+    <h2>Bill of Rights (Amendments 1-10)</h2>
+    <ol class="bill-list">
+      <li><b>Freedom of religion, speech, press, assembly, and petition</b></li>
+      <li><b>Right to keep and bear arms</b></li>
+      <li><b>Protection from quartering of soldiers</b></li>
+      <li><b>Protection from unreasonable searches and seizures</b></li>
+      <li><b>Rights in criminal cases (due process, no double jeopardy, no self-incrimination)</b></li>
+      <li><b>Right to a fair and speedy trial by jury</b></li>
+      <li><b>Right to trial by jury in civil cases</b></li>
+      <li><b>Protection from excessive bail, fines, and cruel and unusual punishment</b></li>
+      <li><b>Protection of rights not specifically enumerated in the Constitution</b></li>
+      <li><b>Powers not delegated to the federal government are reserved to the states or the people</b></li>
+    </ol>
+    
+    <ol id="source-list">
+      <li>
+        <a href="https://nccs.net/blogs/americas-founding-documents/bill-of-rights-amendments-1-10" data-key="nccs-bor" target="_blank">
+          Source: NCCS - Bill of Rights
+        </a>
+        <span class="count"></span>
+      </li>
+    </ol>
+  </main>
+  <script>
+    // Simple JS "database" using localStorage
+    const dbKey = 'sourceAnchorVisits';
+    function getDB() {
+      return JSON.parse(localStorage.getItem(dbKey) || '{}');
+    }
+    function setDB(db) {
+      localStorage.setItem(dbKey, JSON.stringify(db));
+    }
 
-  document.body.appendChild(clock);
+    function updateUI() {
+      const db = getDB();
+      document.querySelectorAll('a[data-key]').forEach(a => {
+        const key = a.dataset.key;
+        const count = db[key] || 0;
+        a.nextElementSibling.textContent = count > 0 ? `Visited ${count} time${count > 1 ? 's' : ''}` : '';
+      });
+    }
 
-  function updateClock() {
-    const now = new Date();
-    const timeStr = now.toLocaleTimeString();
-    clock.innerText = "🕒 " + timeStr;
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
-});
-</script>
-  </body>
+    document.querySelectorAll('a[data-key]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        // Update "database" before navigating
+        const key = this.dataset.key;
+        const db = getDB();
+        db[key] = (db[key] || 0) + 1;
+        setDB(db);
+        updateUI();
+        // Optionally, comment out the next line to prevent navigation for demo
+        // e.preventDefault();
+      });
+    });
+
+    updateUI();
+  </script>
+</body>
 </html>
