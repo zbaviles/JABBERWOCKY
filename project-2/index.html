@@ -5,6 +5,10 @@
   <title>Bill of Rights - Project Directory Cover</title>
   <style>
     body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;      /* vertical centering */
+      justify-content: center;  /* horizontal centering */
       background: linear-gradient(135deg, #e6e6e6 0%, #b0b0b0 100%);
       color: #222b38;
       font-family: 'Segoe UI', 'Arial', sans-serif;
@@ -13,12 +17,20 @@
     }
     main {
       max-width: 900px;
-      margin: 2rem auto;
+      width: 100%;
       background: rgba(255,255,255,0.97);
       border-radius: 12px;
       box-shadow: 0 4px 24px rgba(60,60,60,0.18);
       padding: 2rem 2.5rem;
       border: 2px solid #b0b0b0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      width: 100%;
     }
     h1 {
       color: #b22234;
@@ -26,11 +38,26 @@
       letter-spacing: 2px;
       font-weight: 900;
       font-size: 2.2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
       background: linear-gradient(90deg, #b0b0b0 0%, #e6e6e6 50%, #b0b0b0 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      color: #3c3b6e;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      width: 100%;
+    }
+    .intro {
+      font-size: 1.08rem;
+      color: #444;
+      margin-bottom: 2rem;
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
     }
     .dir-structure {
       font-family: 'Fira Mono', 'Consolas', monospace;
@@ -41,10 +68,13 @@
       box-shadow: 0 2px 8px #bbb;
       color: #3c3b6e;
       font-size: 1.08rem;
+      width: 100%;
+      text-align: left;
     }
     .bill-list {
       margin: 2em 0 1em 0;
       padding-left: 1.5em;
+      width: 100%;
     }
     .bill-list li {
       margin-bottom: 0.7em;
@@ -63,6 +93,8 @@
       border-bottom: 2px solid #b0b0b0;
       border-radius: 2px;
       transition: color 0.2s;
+      text-align: center;
+      width: 100%;
     }
     .source-link:hover {
       color: #b22234;
@@ -104,12 +136,83 @@
       box-shadow: none;
       border-radius: 0;
       padding: 0;
+      width: 100%;
+      text-align: center;
+    }
+    footer {
+      margin-top: 2em;
+      font-size: 0.98em;
+      color: #888;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Small screens */
+    @media (max-width: 600px) {
+      main {
+        max-width: 99vw;
+        padding: 1em 0.5em;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+      .dir-structure, .bill-list, ol, .source-link .popup {
+        font-size: 0.98rem;
+        padding: 0.7em 0.5em;
+      }
+      .source-link .popup {
+        min-width: 140px;
+        max-width: 98vw;
+      }
+    }
+
+    /* Medium screens */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      main {
+        max-width: 90vw;
+        padding: 1.5em 1em;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      .dir-structure, .bill-list, ol, .source-link .popup {
+        font-size: 1.02rem;
+        padding: 0.9em 1em;
+      }
+      .source-link .popup {
+        min-width: 180px;
+        max-width: 90vw;
+      }
+    }
+
+    /* Large screens */
+    @media (min-width: 1025px) {
+      main {
+        max-width: 900px;
+        padding: 2rem 2.5rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      .dir-structure, .bill-list, ol, .source-link .popup {
+        font-size: 1.08rem;
+        padding: 1em 2em;
+      }
+      .source-link .popup {
+        min-width: 260px;
+        max-width: 340px;
+      }
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>Bill of Rights<br><span style="font-size:1.1rem;font-weight:400;">(Project Directory Cover)</span></h1>
+    <h1>Bill of Rights</h1>
+    <div class="subtitle">(Project Directory Cover)</div>
+    <div class="intro">
+      This page demonstrates a project directory structure and a summary of the United States Bill of Rights. 
+      It also features a source link tracker and popup for accessibility and learning purposes.
+    </div>
     <div class="dir-structure">
       /JABBERWOCKY<br>
       └── project-2/<br>
@@ -133,7 +236,6 @@
       <li><b>Protection of rights not specifically enumerated in the Constitution</b></li>
       <li><b>Powers not delegated to the federal government are reserved to the states or the people</b></li>
     </ol>
-    
     <ol id="source-list">
       <li>
         <a href="https://nccs.net/blogs/americas-founding-documents/bill-of-rights-amendments-1-10"
@@ -141,6 +243,7 @@
            data-key="nccs-bor"
            target="_blank"
            aria-haspopup="true">
+          <span style="flex: 1;">Bill of Rights (Amendments 1-10)</span>
           Source: NCCS - Bill of Rights
           <span class="popup" role="tooltip" style="display:none;">
             Visit the National Center for Constitutional Studies for the full Bill of Rights text.
@@ -149,6 +252,9 @@
         <span class="count"></span>
       </li>
     </ol>
+    <footer>
+      &copy; 2025 JABBERWOCKY Project &mdash; All rights reserved.
+    </footer>
   </main>
   <script>
     // Simple JS "database" using localStorage
